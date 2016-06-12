@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="iclass">
+    <property name="height">200</property>
+    <property name="takefocus">true</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.LabelFrame" id="Card">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Card</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">w</property>
+          <rows>
+            <row id="0">
+              <property name="minsize">0</property>
+            </row>
+          </rows>
+        </layout>
+        <child>
+          <object class="tk.Button" id="Read Button">
+            <property name="command">read_card</property>
+            <property name="text" translatable="yes">Read Card</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="Blocks">
+            <property name="text" translatable="yes">Blocks</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.tkscrollbarhelper" id="tkscrollbarhelper_2">
+            <property name="scrolltype">both</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+            <child>
+              <object class="tk.Listbox" id="Block List">
+                <property name="font">TkFixedFont</property>
+                <property name="width">60</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="Controls">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Controls</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="tk.Entry" id="Data">
+            <property name="font">TkFixedFont</property>
+            <property name="text" translatable="yes">Data</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="Block Choice">
+            <property name="font">TkFixedFont</property>
+            <property name="from_">0</property>
+            <property name="increment">1</property>
+            <property name="to">31</property>
+            <property name="width">3</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="Write Block">
+            <property name="command">write_block</property>
+            <property name="text" translatable="yes">Write Block</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
