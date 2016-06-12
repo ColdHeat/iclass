@@ -1,5 +1,7 @@
 # iclass
 
+In order to read and write to cards, you will, at the minimum, need a reader/writer. The simplest way to get one is to get a reader/writer from the HID OMNIKEY line. Either the HID OMNIKEY 5321 or 6321 will work and both are fairly cheap at around $50. The model number does not matter very much, contrary to what you may think. I used an HID OMNIKEY 6321 CLi and an HID OMNIKEY 5321 v2 CLi.
+
 To build the software you want to start off by downloading the [MinGW installer assistant](https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download). Install it and select:
 
 * mingw-developer-toolkit
