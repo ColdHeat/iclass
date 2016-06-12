@@ -1,6 +1,6 @@
 # iclass
 
-To build the software you want to start off by downloading the [MinGW installer assistant](Download https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download). Install it and select:
+To build the software you want to start off by downloading the [MinGW installer assistant](https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download). Install it and select:
 
 * mingw-developer-toolkit
 * mingw32-gcc-g++
